@@ -86,3 +86,12 @@ section__title-2::after{
    left: -5px;
    top:-5px;
 }
+.header{
+   postion:fixed;
+   width 100%;
+   top:0;
+   left:0;
+   background-color: var(--body-color);
+   z-index:var(--z-fixed) ;
+   transition:box;
+}
