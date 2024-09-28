@@ -1,97 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-*{ 
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  html{
-    scroll-behavior: smooth;
-  }
-  body{
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
-  }
-  h1,h2,h3.h4{
-    color: var(--title-color);
-    font-wieght: var(--font-bold);
-  }
-ul{
-    list-style: none;
+   font-family: "Poppins", sans-serif;
+   font-weight: 100;
+   font-style: normal;
 }
-a{
-    text-decoration: none;
+
+:root {
+   --header-height: 3.5rem;
+   --body-font: 'Poppins', sans-serif;
+   --body-color: #f5f5f5;
+   --text-color: #333;
+   --title-color: #222;
+   --font-bold: 700;
+   --first-color: hsl(14, 98%, 60%);
+   --black-color: #000;
+   --z-fixed: 10;
 }
-img{
-    display:block;
-    max-width: 100%;
-    height: auto;
+
+@media screen and (min-width: 1150px) {
+   :root {
+      --biggest-font-size: 4.5rem;
+      --h1-font-size: 3rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+   }
 }
- /* reusabel css container  */
- .container{
-    max-width: 1120px;
-    margin-inline: 1.5rem;
- }
- .grid{
-    display: grid;
-    gap: 1.5rem;
- }
- .section{
-    padding-block: 4 rem 2 rem;
- }
- /* About me */
- section__title-1, section__title-2{
-    position: relative;
-    font-size: var(--h1-font-size);
-    width: max-content;
-    margin: .75rem auto 2rem;
- }
- .section__title-1 span, section__title-2 span{
-    z-index: 5;
-    position: relative;
- }
- .section__title-1::after,
- .section_-title-2::after{
-    content:"";
-    width: 40px;
-    background-color: hsl(14, 98%, .2);
-    position: absolute;
-    top:-4px;
-    right: -8px;
-    
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
 }
-section__title-2::after{
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: var(--body-font);
+   font-size: var(--normal-font-size);
+   background-color: var(--body-color);
+   color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+   color: var(--title-color);
+   font-weight: var(--font-bold);
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+/* Reusable CSS Container */
+.container {
+   max-width: 1120px;
+   margin-inline: 1.5rem;
+}
+
+.grid {
+   display: grid;
+   gap: 1.5rem;
+}
+
+.section {
+   padding-block: 4rem 2rem;
+}
+
+/* About Me Section */
+.section__title-1, .section__title-2 {
+   position: relative;
+   font-size: var(--h1-font-size);
+   width: max-content;
+   margin: .75rem auto 2rem;
+}
+
+.section__title-1 span, .section__title-2 span {
+   z-index: 5;
+   position: relative;
+}
+
+.section__title-1::after,
+.section__title-2::after {
+   content: "";
+   width: 40px;
+   height: 2px;
+   background-color: hsl(14, 98%, 20%);
+   position: absolute;
+   top: -4px;
+   right: -8px;
+}
+
+.section__title-2::after {
    top: initial;
-   bottom:-4px;
-} 
-.geometrix-box{
-   position:absolute;
-   width: 20px;
-   height:20px;
-   background-color: var(--first-color);
-   rotate: - 30deg;
+   bottom: -4px;
 }
-.geometric-box::after{
-   content:"";
-   postion:absolute;
+
+.geometric-box {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   background-color: var(--first-color);
+   transform: rotate(-30deg);
+}
+
+.geometric-box::after {
+   content: "";
+   position: absolute;
    width: 16px;
    height: 16px;
-   border:3px solid var(--black-color);
+   border: 3px solid var(--black-color);
    left: -5px;
-   top:-5px;
+   top: -5px;
 }
-.header{
-   postion:fixed;
-   width 100%;
-   top:0;
-   left:0;
+
+.header {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
    background-color: var(--body-color);
-   z-index:var(--z-fixed) ;
-   transition:box;
+   z-index: var(--z-fixed);
+   transition: box-shadow .4s;
+}
+
+.nav {
+   position: relative;
+   height: var(--header-height);
+   display: flex;
+   justify-content: space-between;
 }
