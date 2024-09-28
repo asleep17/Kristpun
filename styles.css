@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bal+Jammjuree:wght@400;500;600;700&display=swap');
 
 .poppins-thin {
    font-family: "Poppins", sans-serif;
@@ -11,11 +12,11 @@
    /* colors */
    --first-color:hsl(14,98%,50%);
    --black-color:hsl(0,0%,0%);
-   --black-color-light:(hsl(0,0%,40%));
+   --black-color-light:hsl(0,0%,40%);
    --white-color:hsl(0,0%,95%);
    --title-color:hsl(0,0%,0%);
    --text-color:hsl(0,0%,35%);
-   --text-color-light:hsl(0,0,604);
+   --text-color-light:hsl(0,0,64%);
    --body-color:hsl(0,0%,87%);
    /* font and typography*/
    --body-font:"Bal Jamjuree",sans-serif;
@@ -26,6 +27,7 @@
    --normal-font-size: .938rem;
    --small-font-size: .813rem;
    --smaller-font-size: .75rem;
+   --smallest-font-size:.65rem;
    /* font size*/
    --font-regular:400;
    --font-medium:500;
@@ -170,7 +172,7 @@ img {
 }
 .nav__logo{
    display: flex;
-   column-gap: 5rem;
+   column-gap: .5rem;
    align-items:center;
    font-weight: var(--font-semi-bold);
    color:var(--title-color);
@@ -188,21 +190,21 @@ img {
    border-radius: 50%;
 }
 .nav__toggle{
-   font-size: 1,25rem;
+   font-size: 1.25rem;
    cursor:pointer;
 }
 /*   Navigation for mobile device*/
 @media screen and (max-width: 1150px){
    .nav__menu{
       position: fixed;
-      top: 0;
+      top: -100%;
       left: 0;
       background-color: hsla(0,0%, 0%, .75);
       width: 100%;
       padding-block: 1.8rem 5rem;
       text-align: center;
       backdrop-filter: blur(8px);
-      transition:top .4;
+      transition:top 0.4s;
    }
 }
 .nav__title,
@@ -234,7 +236,7 @@ margin-bottom: 3.5rem;
 }
 .nav__name::before{
    left:initial;
-   right: -4 rem;
+   right: -4rem;
 }
 .nav__list{
    display: flex;
@@ -244,5 +246,31 @@ margin-bottom: 3.5rem;
 .nav__link{
    position:relative;
    color:var(--text-color-light);
-
- }
+   font-size: var(--h3-font-size);
+   font-weight: var(--font-semi-bold);
+   transition:color .3s;
+}
+.nav__link::after{
+   content: '';
+   width: 25%;
+   height: 2px;
+   background-color:var(--white-color);
+   position:absolute;
+   left:0;
+   bottom: -.5rem;
+   transition: width .3s;
+}
+.nav__link:hover{
+   color:var(--white-color);
+}
+.nav__link:hovere::after{
+   width:25%;
+}
+.nav__close{
+   position: absolute;
+   font-size: 1.5rem;
+   top:1rem;
+   right:1.5rem;
+   cursor:pointer;
+}
+.show
