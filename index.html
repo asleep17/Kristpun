@@ -13,7 +13,7 @@
 <header class="header" id="header">
     <nav class="nav container">
         <a href="#" class="nav__logo">
-            <span class="nav__logo-circle">R</span>
+            <span class="nav__logo-circle">K</span>
             <span class="nav__logo-name">Krist Pun</span>
         </a>
         <div class="nav__menu" id="nav-menu">
@@ -21,7 +21,7 @@
             <h3 class="nav__name">Krist</h3>
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="#home" class="nav__link">Home</a>
+                    <a href="#home" class="nav__link active-link">Home</a>
                 </li>
                 <li class="nav__item">
                     <a href="#about" class="nav__link">About</a>
@@ -30,14 +30,16 @@
                     <a href="#projects" class="nav__link">Projects</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#contacts" class="nav__link">Contact me</a>
+                    <a href="#contact" class="nav__link nav__link-button">Contact me</a>
                 </li>
             </ul>
             <div class="nav__close" id="nav-close">
                 <i class="ri-close-line"></i>
             </div>
         </div>
-        <div class="nav__button">
+        <div class="nav__buttons">
+            <!-------Theme button-->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
             <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-menu-4-line"></i>
             </div>
@@ -62,24 +64,21 @@
                     <div class="geometric-box"></div>
                 </div>
                 <div class="home__social">
-                     <a href="" target="_blank" class="home__social-link">
+                     <a href="https://www.instagram.com/anattapoon/" target="_blank" class="home__social-link">
                         <i class="ri-instagram-line"></i>
                     </a>
-                    <a href="" target="_blank" class="home__social-link">
+                    <a href="https://www.linkedin.com/in/krist-pun-a15a28299/" target="_blank" class="home__social-link">
                         <i class="ri-linkedin-line"></i>
                     </a>
-                    <a href="" target="_blank" class="home__social-link">
+                    <a href="https://github.com/asleep17" target="_blank" class="home__social-link">
                         <i class="ri-github-line"></i>
                     </a>
                 </div>
             </div>
             <div class="home__info">
-            <p class="home__dscription">
+            <p class="home__description">
                 <b>Frontend Developer</b>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                8-year-old software engineering student skilled in HTML, CSS, JavaScript, and Python. Aspiring data analyst with experience in Pandas, NumPy, Matplotlib, and PHP.
             </p>
             <a href="#about" class="home__scroll">
                 <div class="home__scroll-box">
@@ -105,26 +104,25 @@
                 </div>
             </div>
             <div class="about__info">
-                <p class="about__description">
-                    lorem upshumsdfsdjflsdf <b>Web pages</b>
-                    <b>UI.UX User Interface</b>;lsdfksj df lksf
-                    sdfjhsdkfs sjd flsjdfs sldjf lsdjfs 
-                    s dfjhnsdfsdf sjd fjlskdfj s sdlfkj sldf sdl sjd
-                    sd fsdf sf sdf sfdsf sdfsdfs dfs dfsd f sdfsdf
+                <p class="about__description" >
+                    I’m an 18-year-old software engineering student who’s passionate about both data analysis and web development. 
+                    While I’m still a beginner and haven’t completed any formal
+                     projects yet, I’ve been diving deep into HTML, CSS, JavaScript, Python, and even dabbling in PHP.
+
+                   
                 </p>
                 <ul class="about__list">
                     <li class="about__item">
-                        <b>Data analyst</b>
-                        sdfdfsd fsfd sdfsdf sdf sdf sdfdfsdsdf sdfsdfsdf sdf 
-                        sdf sdf sdf sfsdfsdfsdfs sdfsdfsdfsdfsdf sdfsdfsdfsdfsdfsdf
-                        dfss dfsdfsdf.
+                        <b>Data analyst</b>:
+                        My love for technology drives me to continuously enhance my skill set, exploring emerging trends in software development and data science. Although I'm a beginner with no completed projects yet, I thrive on collaboration and believe that diverse perspectives can lead to exceptional solutions.
+                       
                     </li>
                 </ul>
                 <div class="about__buttons">
                     <a href="#contact" class="button">
                         <i class="ri-send-plane-line"></i> Contact me.
                     </a>
-                    <a href="" target="_blank" class="button__ghost">
+                    <a href="https://www.linkedin.com/in/krist-pun-a15a28299/" target="_blank" class="button__ghost">
                         <i class="ri-linkedin-box-line"></i>
                     </a>
                 </div>
@@ -132,7 +130,7 @@
         </div>
      </section>
      <!-------------------Services-------------------------------------->
-     <section class="services section">
+     <section class="services section" id="services">
         <h2 class="section__title-2">
             <span>Services.</span>
         </h2>
@@ -169,12 +167,8 @@
 
                 <h2 class="services__title">Web Design</h2>
 
-                <p class="services__description"> sdfsldkjfsdfs
-                    dfsdfsdfsdfsdf
-                    sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfs
-                    dfsdf
-                    sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsd
-                    fsdfsdfsdfsdf
+                <p class="services__description">
+                    I only 
                 </p>
             </div>
         </article>
@@ -234,10 +228,115 @@
             </article>
         </div>
      </section>
+     <!-----------------------------SECTION------------------->
+     <section class="contact section" id="contact">
+        <div class="contact__container grid">
+            <div class="contact__data">
+              <h2 class="section__title-2">
+                <span>Contact Me.</span>
+             </h2>
+             <p class="contact__description-1">
+                I willl read all emails. Send me any message
+                you want and I'll get back to you.
+              </p>
+             <p class="contact__description-2">
+                I nedd your <b>Name</b> and <b>Email Address</b>
+              but you won't recieve anything other than your reply.
+             </p>
+             <div class="geometric-box"></div>
+             </div>
+
+             <div class="contact__mail">
+             <h2 class="contact__title">
+                Send Me a message
+             </h2>
+             <form action="" class="contact__form" id="contact-form">
+                <div class="contact__group">
+                    <div class="contact__box">
+                        <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
+                        <label for="name" class="contact__label">First Name</label>
+                    </div>
+            
+                    <div class="contact__box">
+                        <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email">
+                        <label for="email" class="contact__label">Email</label>
+                    </div>
+            
+                    <div class="contact__box">
+                        <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                        <label for="subject" class="contact__label">Subject</label>
+                    </div>
+            
+                    <div class="contact__box contact__area">
+                        <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                    </div>
+                </div>
+                <p class="contact__message" id="contact-message"></p>
+                <button type="submit" class="contact__button button">
+                    <i class="ri-send-plane-line"></i>Send message
+                </button>
+            </form>
+            
+             </div>
+
+             <div class="contact__social">
+              <img src="curved-arrow.svg" alt="image" class="contact__social-arrow">
+
+              <div class="contact__social-data">
+                <div>
+                    <p class="contact__social-description-1">
+                        Follow me on my socials
+                    </p>
+                    <p class="contact__social-description-2">
+                        Write on my social networks
+                    </p>
+                </div>
+                <div class="contact__social-links">
+                    <a href="https://www.facebook.com/krist.poon.1" target="_blank" class="contact__social-link">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+                    <a href="https://www.instagram.com/anattapoon/" target="_blank"class="contact__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/krist-pun-a15a28299/" target="_blank" class="contact__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                </div>
+              </div>
+            </div>
+        </div>
+     </section>
 </main>
 
 <!------------------------ FOOTER------------------------>
-<footer class="footer"></footer>
+<footer class="footer">
+    <div class="footer__container container grid">
+        <ul class="footer__links">
+            <li>
+                <a href="#about" class="footer__link">About</a>
+            </li>
+            <li>
+                <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li>
+                <a href="#projects" class="footer__link">Projects</a>
+            </li>
+        </ul>
+        <span class="footer__copy">
+           &#169; ALl Rights Reserve By 
+            <a href="">Krist Pun</a>
+        </span>
+    </div>
+</footer>
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-s-line"></i>
+</a>
+<script src="scrollreveal.min.js"></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 <script src="main.js"></script>
 </body>
-</html>
+</html
