@@ -26,8 +26,8 @@ navLink.forEach(n => n.addEventListener('click',linkAction));
 /*-------------------------------SHADOW HEADER ----------------------*/
 const shadowHeader = ()=>{
     const header = document.getElementById('header')
-    this.scrollY >= 50 ? header.classlist.add('shadow-header')
-                       : header.classlist.remove('shadow-header')
+    this.scrollY >= 50 ? header.classList.add('shadow-header')
+                       : header.classList.remove('shadow-header')
 }
 window.addEventListener('scroll', shadowHeader)
 const contactForm = document.getElementById('contact-form');
@@ -45,7 +45,7 @@ const sendEmail = (e) => {
             }, 5000);
             contactForm.reset()},
             ()=>{
-                contactForm.textContent ='Message not sent(service error)'
+                contactMessage.textContent ='Message not sent(service error)'
             })
         };
 
