@@ -314,7 +314,7 @@ margin-bottom: 3.5rem;
 }
 .nav__link::after{
    content: '';
-   width: 25%;
+   width: 0;
    height: 2px;
    background-color:var(--white-color);
    position:absolute;
