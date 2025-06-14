@@ -67,7 +67,7 @@ const scrollActive = () => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 58; // Fixed navigation offset
         const sectionId = current.getAttribute('id');
-        const sectionClass = document.querySelector('.nav__menu a[href*="' + sectionId + '"]'); // Ensure proper quotes
+        const sectionClass = document.querySelector('.nav__menu a[href="#' + sectionId + '"]'); // Ensure proper quotes
 
         if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
             sectionClass.classList.add('active-link'); // Fixed variable name
